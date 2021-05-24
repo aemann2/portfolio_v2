@@ -1,0 +1,45 @@
+@import '../colors/colors';
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  opacity: 1;
+  font-size: 1.2rem;
+  font-weight: 400;
+  mix-blend-mode: difference;
+  transition: background-color 0.3s ease-out;
+
+  &__links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0.3em 1em;
+    // setting position to relative so I can absolute-position the child classes in the media query
+    position: relative;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    &:link,
+    &:visited {
+      color: $light-color;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+    &:hover {
+      color: $highlight-color;
+      -webkit-transition: color 0.4s ease-in-out;
+      transition: color 0.4s ease-in-out;
+    }
+  }
+
+  &__icon {
+    display: none;
+  }
+}

@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import './components/navbar';
+@import './components/header';
+
+$primary-font: 'Montserrat', sans-serif;
+
 // Globals //
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -17,4 +24,6 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
+  font-family: $primary-font;
+  background-color: $light-color;
 }
