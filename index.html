@@ -25,27 +25,31 @@
 
   <header>
     <nav class="navbar">
-      <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-        <i class="fa fa-bars navbar__icon"></i>
+      <a href="javascript:void(0);" class="navbar__hamburger" onclick="hamburgerMenu()">
+        <i class="fa fa-bars navbar__hamburger__icon"></i>
       </a>
       <ul class="navbar__links">
-        <li class="navbar__item"><a href="#welcome-section" class="navbar__link">Welcome</a></li>
+        <li class="navbar__item"><a href="#welcome" class="navbar__link">Welcome</a></li>
         <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
-        <li class="navbar__item"><a href="#projects" class="navbar__link">Technology</a></li>
+        <li class="navbar__item"><a href="#technology" class="navbar__link">Technology</a></li>
         <li class="navbar__item"><a href="#about-me" class="navbar__link">About</a></li>
         <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="welcome">
+  <section class="welcome" id="welcome">
     <div class="welcome__img">
-      <img class="welcome__image__portrait" src="./images/self.jpeg" alt="A picture of Adam Mann">
+      <img class="welcome__img__portrait" src="./images/self.jpeg" alt="A picture of Adam Mann">
     </div>
     <div class="welcome__text">
       <h1 class="welcome__text__h1">Hello, I'm Adam.</h1>
       <h2 class="welcome__text__h2">(front-end developer)</h2>
     </div>
+  </section>
+
+  <section class='projects' id="projects">
+    <h2 class="projects__heading">Projects</h2>
   </section>
 
   <script src='./js/main.js'></script>
