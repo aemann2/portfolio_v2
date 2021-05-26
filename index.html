@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="manifest" href="favicon_io/site.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Adam Mann's Portfolio</title>
 </head>
 
@@ -52,6 +54,27 @@
     <h2 class="projects__heading">Projects</h2>
   </section>
 
+  <section>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/slider/img1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slider/img2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slider/img3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/slider/img4.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
   <section class='contact'>
     <p class='contact__par'>Looking for a resume? Click here</p>
     <a class="contact__resumeBtn" href="./downloads/adam_mann_resume.pdf" target="_blank">Resume</a>
@@ -65,9 +88,18 @@
 
   <script src="./js/smooth-scroll.polyfills.min.js"></script>
   <script src='./js/main.js'></script>
+  <!-- swiper -->
+  <script src="./js/swiper-bundle.min.js"></script>
   <!-- enables smooth scroll on Safari -->
   <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
+    const scroll = new SmoothScroll('a[href*="#"]');
+
+    const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 
 </body>
