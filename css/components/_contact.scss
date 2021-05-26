@@ -1,0 +1,42 @@
+.contact {
+  position: relative;
+  margin-top: 4rem;
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+
+  &__par {
+    margin-bottom: 3rem;
+  }
+
+  &__resumeBtn {
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+    border: 0.25rem solid $secondary-color;
+    background-size: 100% 210%;
+    background-image: linear-gradient(
+      to bottom,
+      $secondary-color 50%,
+      $light-color 50%
+    );
+
+    transition: background-position 0.5s;
+    color: $light-color;
+
+    &:hover {
+      color: $secondary-color;
+      background-position: 0 100%;
+      cursor: pointer;
+    }
+  }
+
+  &__email {
+    margin-top: 3rem;
+  }
+
+  &--email {
+    font-weight: 600;
+  }
+}

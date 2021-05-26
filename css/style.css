@@ -83,6 +83,46 @@
   margin-top: 2rem;
 }
 
+.contact {
+  position: relative;
+  margin-top: 4rem;
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contact__par {
+  margin-bottom: 3rem;
+}
+
+.contact__resumeBtn {
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1rem;
+  border: 0.25rem solid #476f93;
+  background-size: 100% 210%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #476f93), color-stop(50%, #f2f1eb));
+  background-image: linear-gradient(to bottom, #476f93 50%, #f2f1eb 50%);
+  -webkit-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+  color: #f2f1eb;
+}
+
+.contact__resumeBtn:hover {
+  color: #476f93;
+  background-position: 0 100%;
+  cursor: pointer;
+}
+
+.contact__email {
+  margin-top: 3rem;
+}
+
+.contact--email {
+  font-weight: 600;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
