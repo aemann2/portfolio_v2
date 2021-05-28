@@ -36,7 +36,13 @@
     margin-top: 3rem;
   }
 
+  &__touch {
+    margin-top: 1rem;
+  }
+
   &--email {
     font-weight: 600;
+    font-size: calc(1rem + 2.5vw);
+    margin: auto;
   }
 }

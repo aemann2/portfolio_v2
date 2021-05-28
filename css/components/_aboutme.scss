@@ -2,10 +2,35 @@
 
 .aboutme {
   background-color: $secondary-color;
-  color: $light-color;
+  padding: 2rem 1rem;
   text-align: center;
 
-  &__title {
-    font-size: 2rem;
+  &__heading {
+    font-size: 3rem;
+    color: $light-color;
+    margin-bottom: 3rem;
+  }
+
+  &__blurbs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    &__blurb {
+      background-color: $light-color;
+      padding: 1rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.swiper-slide {
+  border-radius: 3rem;
+
+  &__pic {
+    border-radius: 3rem;
   }
 }
