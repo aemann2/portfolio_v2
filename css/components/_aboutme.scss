@@ -1,0 +1,11 @@
+@import '../colors/colors';
+
+.aboutme {
+  background-color: $secondary-color;
+  color: $light-color;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+  }
+}

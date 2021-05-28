@@ -211,10 +211,19 @@
   font-weight: 600;
 }
 
+.aboutme {
+  background-color: #476f93;
+  color: #f2f1eb;
+  text-align: center;
+}
+
+.aboutme__title {
+  font-size: 2rem;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,

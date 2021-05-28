@@ -3,6 +3,7 @@
 @import './components/header';
 @import './components/projects';
 @import './components/contact';
+@import './components/aboutme';
 @import './components/mediaQueries';
 
 $primary-font: 'Montserrat', sans-serif;
@@ -11,7 +12,6 @@ $primary-font: 'Montserrat', sans-serif;
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 *,
 *:before,
