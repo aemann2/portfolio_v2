@@ -31,6 +31,12 @@ body {
   background-color: $light-color;
 }
 
+button {
+  cursor: pointer;
+}
+
+// swiper //
+
 .swiper-container {
   width: 100%;
   height: 100%;
