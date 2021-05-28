@@ -1,5 +1,94 @@
+@import '../colors/colors';
+
 .projects {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 2rem;
+  padding: 0 2rem;
+
+  &__heading {
+    margin-bottom: 4rem;
+  }
+
+  &__project {
+    margin-bottom: 4rem;
+
+    &__img {
+      display: grid;
+      height: 100%;
+      position: relative;
+
+      &__desktop {
+        width: 85vw;
+        height: 14rem;
+        margin: auto;
+        border: 7px solid $primary-color;
+        border-radius: 5px;
+      }
+
+      &__mobile {
+        position: absolute;
+        max-width: 30%;
+        height: 13rem;
+        border: solid black;
+        border-width: 8px 3px;
+        border-radius: 10px;
+        top: 15%;
+        right: 15%;
+      }
+    }
+
+    &__text {
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__description,
+    &__tech {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      margin-top: 1rem;
+    }
+
+    &__tech {
+      background-color: $secondary-color;
+      color: $light-color;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    &__buttons {
+      text-align: center;
+    }
+
+    &__btnLink {
+      text-decoration: none;
+    }
+
+    &--btn {
+      display: inline-block;
+    }
+
+    &__ghBtn {
+      border: none;
+      font-size: 1.2rem;
+      background-color: $primary-color;
+      color: $light-color;
+      border-radius: 8rem;
+      padding: 10px 20px;
+      margin-right: 1rem;
+      box-shadow: 11px 12px 31px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    &__liveBtn {
+      font-size: 1.4rem;
+      border: none;
+      color: $primary-color;
+    }
+  }
 }

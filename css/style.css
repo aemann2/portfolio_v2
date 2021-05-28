@@ -81,6 +81,94 @@
   text-align: center;
   font-size: 1.5rem;
   margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.projects__heading {
+  margin-bottom: 4rem;
+}
+
+.projects__project {
+  margin-bottom: 4rem;
+}
+
+.projects__project__img {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  position: relative;
+}
+
+.projects__project__img__desktop {
+  width: 85vw;
+  height: 14rem;
+  margin: auto;
+  border: 7px solid #162759;
+  border-radius: 5px;
+}
+
+.projects__project__img__mobile {
+  position: absolute;
+  max-width: 30%;
+  height: 13rem;
+  border: solid black;
+  border-width: 8px 3px;
+  border-radius: 10px;
+  top: 15%;
+  right: 15%;
+}
+
+.projects__project__text {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.projects__project__title {
+  font-size: 1.5rem;
+}
+
+.projects__project__description, .projects__project__tech {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+}
+
+.projects__project__tech {
+  background-color: #476f93;
+  color: #f2f1eb;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.projects__project__buttons {
+  text-align: center;
+}
+
+.projects__project__btnLink {
+  text-decoration: none;
+}
+
+.projects__project--btn {
+  display: inline-block;
+}
+
+.projects__project__ghBtn {
+  border: none;
+  font-size: 1.2rem;
+  background-color: #162759;
+  color: #f2f1eb;
+  border-radius: 8rem;
+  padding: 10px 20px;
+  margin-right: 1rem;
+  -webkit-box-shadow: 11px 12px 31px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 11px 12px 31px -5px rgba(0, 0, 0, 0.5);
+}
+
+.projects__project__liveBtn {
+  font-size: 1.4rem;
+  border: none;
+  color: #162759;
 }
 
 .contact {
