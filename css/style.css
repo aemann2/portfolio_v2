@@ -77,6 +77,34 @@
   width: 100vw;
 }
 
+.skills {
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  gap: 2.5rem;
+  max-width: 800px;
+}
+
+.badge {
+  font-size: 3rem;
+  color: #162759;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.badge:hover {
+  color: #476f93;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .projects {
   text-align: center;
   font-size: 1.5rem;

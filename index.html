@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script src="https://kit.fontawesome.com/7a37b269f1.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Linkdein optimization -->
@@ -32,8 +33,8 @@
       </a>
       <ul class="navbar__links">
         <li class="navbar__item"><a href="#welcome" class="navbar__link">Welcome</a></li>
+        <li class="navbar__item"><a href="#skills" class="navbar__link">Skills</a></li>
         <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
-        <li class="navbar__item"><a href="#technology" class="navbar__link">Technology</a></li>
         <li class="navbar__item"><a href="#aboutme" class="navbar__link">About</a></li>
         <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
       </ul>
@@ -48,6 +49,20 @@
       <h1 class="welcome__text__h1">Hello, I'm Adam.</h1>
       <h2 class="welcome__text__h2">(front-end developer)</h2>
     </div>
+  </section>
+
+  <section class='skills' id='skills'>
+    <i class="fab fa-html5 badge"></i>
+    <i class="fab fa-css3 badge"></i>
+    <i class="fab fa-js badge"></i>
+    <i class="fab fa-sass badge"></i>
+    <i class="fab fa-react badge"></i>
+    <i class="fab fa-bootstrap badge"></i>
+    <i class='fab fa-github badge'></i>
+    <i class="fab fa-figma badge"></i>
+    <i class="fab fa-python badge"></i>
+    <i class="fab fa-node badge"></i>
+    <i class="fab fa-npm badge"></i>
   </section>
 
   <section class='projects' id="projects">
@@ -184,6 +199,7 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
+    <!-- end swiper -->
   </section>
 
   <section class='contact' id='contact'>
@@ -193,8 +209,24 @@
     <p class="contact__touch">Get in touch at: <span class='contact--email'>aemann2@gmail.com</span></p>
   </section>
 
-  <footer>
-
+  <footer class='footer'>
+    <ul class='footer__links'>
+      <li>
+        <a class="footer__link" href="https://github.com/aemann2" target="_blank">
+          <img class="footer__img" src="./images/icons/github-ico.png" alt="Github">
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" href="https://www.linkedin.com/in/adam-mann-55365466/" target="_blank">
+          <img class="footer__img" src="./images/icons/linkedin-ico.png" alt="Linkedin">
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" href="https://www.frontendmentor.io/profile/aemann2" target="_blank">
+          <img class="footer__img" src="./images/icons/fe-mentor-ico.png" alt="Frontend Mentor">
+        </a>
+      </li>
+    </ul>
   </footer>
 
   <script src="./js/smooth-scroll.polyfills.min.js"></script>

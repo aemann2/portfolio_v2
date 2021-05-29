@@ -1,0 +1,22 @@
+@import '../colors/colors';
+
+.skills {
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 2.5rem;
+  max-width: 800px;
+}
+
+.badge {
+  font-size: 3rem;
+  color: $primary-color;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $secondary-color;
+    transform: scale(1.3);
+  }
+}
