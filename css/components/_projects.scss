@@ -84,12 +84,25 @@
       padding: 10px 20px;
       margin-right: 1rem;
       box-shadow: 11px 12px 31px -5px rgba(0, 0, 0, 0.5);
+
+
+      &:hover {
+        color: $highlight-color;
+      }
     }
 
     &__liveBtn {
       font-size: 1.4rem;
       border: none;
       color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &__liveBtn, &__ghBtn {
+      transition: color .3s;
     }
   }
 }

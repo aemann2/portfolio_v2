@@ -1,5 +1,7 @@
 @media only screen and (min-width: 600px) {
   .projects {
+    max-width: 1300px;
+    margin: 0 auto;
     &__project {
       display: flex;
       gap: 1rem;
@@ -11,6 +13,9 @@
       &__text {
         order: 1;
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       &__img {
@@ -37,5 +42,62 @@
 }
 
 @media only screen and (min-width: 700px) {
+  // make heading image span 2 sides
+  .projects {
+    &__heading {
+      font-size: clamp(3rem, 5vw, 5rem);
+    }
 
+    &__project {
+      &__title {
+        font-size: clamp(2.5rem, 4vw, 3rem);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  // introduce desktop header
+  // reprogram footer to take up correct amount of space
+}
+
+@media only screen and (min-width: 900px) {
+  // introduce bigger about section
+}
+
+@media only screen and (min-width: 1000px) {
+  // introduce bigger about section
+  .projects {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    &__project {
+      gap: 4rem;
+      &__text {
+        order: 1;
+        max-width: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &__img {
+        order: 2;
+        width: 60%;
+        align-self: center; 
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .projects {
+    &__heading {
+      margin-bottom: 8rem;
+     }
+
+    &__project {
+      margin-bottom: 8rem;
+    }
+  }
 }
