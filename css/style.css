@@ -290,6 +290,41 @@
   border-radius: 3rem;
 }
 
+.footer {
+  background-image: url("../../images/layout/Vector.svg");
+  height: 10rem;
+  width: 100vw;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: .5rem;
+}
+
+.footer__link {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.footer__img {
+  width: 18vw;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

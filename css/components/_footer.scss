@@ -1,0 +1,26 @@
+.footer {
+  background-image: url('../../images/layout/Vector.svg');
+  height: 10rem;
+  width: 100vw;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  &__links {
+    display: flex;
+    list-style: none;
+    margin-bottom: .5rem;
+  }
+
+  &__link {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 18vw;
+  }
+}
