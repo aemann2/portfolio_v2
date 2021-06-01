@@ -101,6 +101,7 @@
       margin: 0.3rem 1.5rem;
     }
 
+    // these two blocks control the link opacity on page load
     &__item:after {
       transition: none;
     }
@@ -153,11 +154,22 @@
   }
 
 @media only screen and (min-width: 900px) {
-  // introduce bigger about section
+  // introduce bigger about section and reposition 
 }
 
 @media only screen and (min-width: 1000px) {
-  // introduce bigger about section
+  .welcome {
+    &__text {
+      &__h1 {
+        font-size: clamp(3rem, 5vw, 5rem);
+      }
+  
+      &__h2 {
+        font-size: clamp(2rem, 4vw, 4rem);
+      }
+    }
+  }
+
   .projects {
     max-width: 1500px;
     margin: 0 auto;
@@ -182,11 +194,18 @@
 }
 
 @media only screen and (min-width: 1300px) {
-  // expand tech icons a little
+  .skills {
+    margin: 7rem auto;
+  }
+
+  .badge {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+
   .projects {
     &__heading {
       margin-bottom: 8rem;
-     }
+    }
 
     &__project {
       margin-bottom: 8rem;

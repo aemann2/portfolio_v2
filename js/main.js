@@ -32,8 +32,7 @@ window.onscroll = () => {
   } else if (linkStyles.position !== 'fixed') {
     navbar.style.backgroundColor = '';
     navbar.style.mixBlendMode = 'normal';
-  }
-  else {
+  } else {
     navbar.style.backgroundColor = '';
     navbar.style.mixBlendMode = 'difference';
   }

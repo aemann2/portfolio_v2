@@ -504,6 +504,12 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .welcome__text__h1 {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+  .welcome__text__h2 {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
   .projects {
     max-width: 1500px;
     margin: 0 auto;
@@ -539,6 +545,12 @@
 }
 
 @media only screen and (min-width: 1300px) {
+  .skills {
+    margin: 7rem auto;
+  }
+  .badge {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
   .projects__heading {
     margin-bottom: 8rem;
   }
