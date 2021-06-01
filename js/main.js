@@ -1,7 +1,7 @@
-// hamburger menu
-
 const navLinks = document.querySelector('.navbar__links');
+const navbar = document.querySelector('.navbar');
 
+// hamburger menu
 function hamburgerMenu() {
   if (navLinks.style.display === 'block') {
     navLinks.style.display = 'none';
@@ -10,18 +10,20 @@ function hamburgerMenu() {
   }
 }
 
+// restores main navbar above 800px
 function restoreNav() {
   if (window.innerWidth > 800) {
     navLinks.style.display = 'flex';
-  } else navLinks.style.display = 'none';
+    navbar.style.mixBlendMode = 'difference';
+  } else {
+    navLinks.style.display = 'none';
+    navbar.style.mixBlendMode = 'normal';
+  }
 }
 
 window.addEventListener('resize', restoreNav);
 
-// navbar color transition
-
-const navbar = document.querySelector('.navbar');
-
+// navbar color transition on scroll
 window.onscroll = () => {
   let linkStyles = window.getComputedStyle(navbar);
   if (window.scrollY > window.innerHeight - 50) {
