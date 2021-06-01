@@ -79,9 +79,78 @@
 }
 
 @media only screen and (min-width: 800px) {
-  // introduce desktop header
-  // reprogram footer to take up correct amount of space
-}
+  // setting rules for main (desktop) navbar
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease-out;
+
+    &__links {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      list-style: none;
+      padding: 1rem;
+    }
+
+    &__item {
+      margin: 0.3rem 1.5rem;
+    }
+
+    &__item:after {
+      transition: none;
+    }
+  
+    &__item:active:after,
+    &__item:focus:after,
+    &__item:hover:after,
+    &__item:visited:after {
+      opacity: 0;
+    }
+
+    &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      &:link,
+      &:visited {
+        color: $light-color;
+        -webkit-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+      }
+      &:hover {
+        color: $highlight-color;
+        -webkit-transition: color 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
+      }
+    }
+  // removing hamburger menu above 800px
+      &__hamburger {
+        display: none;
+
+        &__icon {
+          display: none;
+        }
+      }
+  }
+  
+  // contact sections and footer styles
+    .contact {
+      margin: 4rem 0 -4rem 0;
+    }
+
+    .footer {
+      height: calc(10rem + 30vw);
+
+      &__img {
+        max-width: 300px;
+        width: 18vw;
+      }
+    }
+  }
 
 @media only screen and (min-width: 900px) {
   // introduce bigger about section
