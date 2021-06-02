@@ -1,4 +1,8 @@
 @media only screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  
   .navbar {
     &__item {
       font-size: 1.5rem;

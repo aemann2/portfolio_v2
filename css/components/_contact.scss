@@ -10,6 +10,10 @@
     margin-bottom: 3rem;
   }
 
+  &__par, &__email {
+    color: $para-dark;
+  }
+
   &__resumeBtn {
     font-size: 2rem;
     text-decoration: none;
@@ -42,6 +46,7 @@
 
   &--email {
     font-weight: 600;
+    color: $header-dark;
     font-size: calc(1rem + 2.5vw);
     margin: auto;
   }

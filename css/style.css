@@ -116,6 +116,7 @@
 .projects__heading {
   font-size: 3rem;
   margin-bottom: 4rem;
+  color: #050a1f;
 }
 
 .projects__project {
@@ -155,6 +156,11 @@
 
 .projects__project__title {
   font-size: 1.5rem;
+  color: #050a1f;
+}
+
+.projects__project__description {
+  color: #25272d;
 }
 
 .projects__project__description, .projects__project__tech {
@@ -228,6 +234,10 @@
   margin-bottom: 3rem;
 }
 
+.contact__par, .contact__email {
+  color: #25272d;
+}
+
 .contact__resumeBtn {
   font-size: 2rem;
   text-decoration: none;
@@ -257,6 +267,7 @@
 
 .contact--email {
   font-weight: 600;
+  color: #050a1f;
   font-size: calc(1rem + 2.5vw);
   margin: auto;
 }
@@ -294,6 +305,7 @@
 .aboutme__blurbs__blurb {
   background-color: #f2f1eb;
   padding: 1rem;
+  color: #25272d;
   font-weight: 600;
   margin-bottom: 2rem;
   -webkit-transition: -webkit-transform 0.4s;
@@ -362,6 +374,9 @@
 }
 
 @media only screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
   .navbar__item {
     font-size: 1.5rem;
   }

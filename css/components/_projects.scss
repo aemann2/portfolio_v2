@@ -9,6 +9,7 @@
   &__heading {
     font-size: 3rem;
     margin-bottom: 4rem;
+    color: $header-dark;
   }
 
   &__project {
@@ -46,6 +47,11 @@
 
     &__title {
       font-size: 1.5rem;
+      color: $header-dark;
+    }
+
+    &__description {
+      color: $para-dark;
     }
 
     &__description,
