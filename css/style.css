@@ -29,6 +29,7 @@
 
 .navbar__item {
   margin: 0.3rem 1rem;
+  font-size: 1.3rem;
   position: relative;
 }
 
@@ -202,6 +203,7 @@
   font-size: 1.4rem;
   border: none;
   color: #162759;
+  background-color: #f2f1eb;
 }
 
 .projects__project__liveBtn:hover {
@@ -215,7 +217,7 @@
 
 .contact {
   position: relative;
-  margin: 4rem 0;
+  margin-top: 4rem;
   padding: 0 2rem;
   text-align: center;
   font-size: 2rem;
@@ -261,7 +263,7 @@
 
 .aboutme {
   background-color: #476f93;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
@@ -286,6 +288,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.2rem;
+  margin: 0 2rem;
 }
 
 .aboutme__blurbs__blurb {
@@ -293,6 +296,16 @@
   padding: 1rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.aboutme__blurbs__blurb:hover {
+  background-color: #a8aebf;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .swiper-slide {
@@ -307,6 +320,7 @@
   background-image: url("../../images/layout/footer.svg");
   height: calc(10rem + 10vw);
   width: 100vw;
+  padding: 0 2rem;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -348,6 +362,9 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .navbar__item {
+    font-size: 1.5rem;
+  }
   .projects {
     max-width: 1300px;
     margin: 0 auto;
@@ -519,6 +536,8 @@
     display: -ms-flexbox;
     display: flex;
     gap: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
   }
   .aboutme__blurbs {
     -webkit-box-flex: 1;
@@ -577,6 +596,9 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .contact__resumeBtn {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -617,6 +639,10 @@ body {
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
   background-color: #f2f1eb;
+}
+
+p {
+  line-height: 1.6;
 }
 
 button {

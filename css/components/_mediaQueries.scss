@@ -1,4 +1,9 @@
 @media only screen and (min-width: 600px) {
+  .navbar {
+    &__item {
+      font-size: 1.5rem;
+    }
+  }
   .projects {
     max-width: 1300px;
     margin: 0 auto;
@@ -155,6 +160,8 @@
     &__wrapper {
       display: flex;
       gap: 2rem;
+      max-width: 1800px;
+      margin: 0 auto;
     }
 
     &__blurbs {
@@ -203,6 +210,12 @@
         width: 60%;
         align-self: center; 
       }
+    }
+  }
+
+  .contact {
+    &__resumeBtn {
+      font-size: 3rem;
     }
   }
 }
