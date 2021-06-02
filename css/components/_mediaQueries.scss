@@ -42,6 +42,10 @@
 }
 
 @media only screen and (min-width: 700px) {
+  h2 {
+    font-size: clamp(3rem, 5vw, 5rem) !important;
+  }
+
   .welcome {
     height: 100vh;
     flex-direction: row;
@@ -64,18 +68,6 @@
       }
     }
   }
-
-  .projects {
-    &__heading {
-      font-size: clamp(3rem, 5vw, 5rem);
-    }
-
-    &__project {
-      &__title {
-        font-size: clamp(2.5rem, 4vw, 3rem);
-      }
-    }
-  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -88,6 +80,7 @@
     font-size: 1.2rem;
     font-weight: 400;
     transition: background-color 0.3s ease-out;
+    mix-blend-mode: difference;
 
     &__links {
       display: flex;
@@ -148,13 +141,34 @@
 
       &__img {
         max-width: 300px;
-        width: 18vw;
+        width: 17vw;
       }
     }
   }
 
 @media only screen and (min-width: 900px) {
-  // introduce bigger about section and reposition 
+  .aboutme {
+    &__heading {
+      margin: 2rem 0 4rem 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      gap: 2rem;
+    }
+
+    &__blurbs {
+      flex: 1;
+    }
+  }
+
+  .swiper-container {
+    flex: 1;
+    align-self: center;
+    border: 2rem solid $primary-color;
+    background-color: $primary-color;
+    border-radius: 12px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

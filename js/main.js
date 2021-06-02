@@ -14,7 +14,9 @@ function hamburgerMenu() {
 function restoreNav() {
   if (window.innerWidth > 800) {
     navLinks.style.display = 'flex';
-    navbar.style.mixBlendMode = 'difference';
+    if (window.scrollY < window.innerHeight - 50) {
+      navbar.style.mixBlendMode = 'difference';
+    }
   } else {
     navLinks.style.display = 'none';
     navbar.style.mixBlendMode = 'normal';
