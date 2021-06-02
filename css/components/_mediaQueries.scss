@@ -51,9 +51,9 @@
 }
 
 @media only screen and (min-width: 700px) {
-  h2 {
-    font-size: clamp(3rem, 5vw, 5rem) !important;
-  }
+  // h2 {
+  //   font-size: clamp(3rem, 5vw, 5rem) !important;
+  // }
 
   .welcome {
     height: 100vh;
@@ -76,6 +76,10 @@
         object-fit: cover;
       }
     }
+  }
+
+  .projects__heading, .aboutme__heading, .contact--email {
+    font-size: clamp(3rem, 5vw, 5rem) !important;
   }
 }
 
