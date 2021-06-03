@@ -5,7 +5,7 @@
   
   .navbar {
     &__item {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
   }
   .projects {
@@ -14,6 +14,9 @@
     &__project {
       display: flex;
       gap: 1rem;
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
 
       &__title {
         text-align: center;
@@ -51,10 +54,6 @@
 }
 
 @media only screen and (min-width: 700px) {
-  // h2 {
-  //   font-size: clamp(3rem, 5vw, 5rem) !important;
-  // }
-
   .welcome {
     height: 100vh;
     flex-direction: row;
@@ -90,7 +89,6 @@
     width: 100%;
     z-index: 100;
     opacity: 1;
-    font-size: 1.2rem;
     font-weight: 400;
     transition: background-color 0.3s ease-out;
     mix-blend-mode: difference;
@@ -187,6 +185,11 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .navbar {
+    &__item {
+      font-size: 1.4rem;
+    }
+  }
   .welcome {
     &__text {
       &__h1 {
@@ -216,7 +219,11 @@
       &__img {
         order: 2;
         width: 60%;
-        align-self: center; 
+        align-self: center;
+
+        &__mobile {
+          border-width: 16px 8px;
+        }
       }
     }
   }
@@ -243,7 +250,7 @@
     }
 
     &__project {
-      margin-bottom: 8rem;
+      margin-bottom: 12rem;
     }
   }
 }

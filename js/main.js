@@ -3,9 +3,56 @@ const navbar = document.querySelector('.navbar');
 
 // GSAP
 const tl = gsap.timeline();
-tl.from(".welcome__img", {opacity: 0, duration: .7});
-tl.from(".welcome__text", {x:'-100vw', duration: 1, ease:'power1'});
-tl.fromTo(".navbar__links", {opacity: 0}, {opacity: 1, duration: 1.5});
+
+if (window.scrollY < window.innerHeight - 50) {
+  tl.from(".welcome__img", {opacity: 0, duration: .7}, 0)
+  .from(".welcome__text", {x:'-100vw', duration: 1, ease:'power1'}, .5)
+  .fromTo(".navbar__links", {opacity: 0, visibility: 'hidden'}, {opacity: 1, duration: 1.5, visibility: 'visible'});
+}
+
+gsap.from(".skills", {  
+  scrollTrigger: ".skills", // start the animation when ".box" enters the viewport (once)
+  opacity: 0
+});
+
+gsap.utils.toArray(".projects__project").forEach(project => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: project,
+      toggleActions: "play none none none",
+      start: "top 95%",
+    }
+  });
+
+  tl.from(project, {
+    opacity: 0
+  });
+});
+
+gsap.utils.toArray(".aboutme__blurbs__blurb").forEach(blurb => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: blurb,
+      start: "top 85%",
+      toggleActions: "play none none none",
+    }
+  });
+
+  tl.from(blurb, {  
+    stagger: 0.2,
+    autoAlpha: 0,
+    y: 30,
+    ease: "back.out(1.7)",
+    duration: 1,
+  },
+  "-=1");
+});
+
+gsap.from(".footer", {  
+  scrollTrigger: ".footer", // start the animation when ".box" enters the viewport (once)
+  start: "top 90%",
+  opacity: 0
+});
 
 // hamburger menu
 function hamburgerMenu() {
@@ -18,7 +65,7 @@ function hamburgerMenu() {
 
 // restores main navbar above 800px
 function restoreNav() {
-  if (window.innerWidth > 800) {
+  if (window.innerWidth >= 800) {
     navLinks.style.display = 'flex';
     if (window.scrollY < window.innerHeight - 50) {
       navbar.style.mixBlendMode = 'difference';
