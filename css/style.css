@@ -275,6 +275,7 @@
 
 .aboutme {
   background-color: #476f93;
+  background-image: url("../../images/layout/bubbles.svg");
   padding: 2rem 2rem;
   text-align: center;
 }
@@ -566,14 +567,12 @@
             flex: 1;
   }
   .swiper-container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    border: 2rem solid #162759;
-    background-color: #162759;
     border-radius: 12px;
   }
 }

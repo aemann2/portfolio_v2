@@ -176,10 +176,8 @@
   }
 
   .swiper-container {
-    flex: 1;
+    flex: 1.5;
     align-self: center;
-    border: 2rem solid $primary-color;
-    background-color: $primary-color;
     border-radius: 12px;
   }
 }
