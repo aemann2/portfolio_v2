@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const navLinks = document.querySelector('.navbar__links');
 const navbar = document.querySelector('.navbar');
 
@@ -48,9 +49,11 @@ gsap.utils.toArray(".aboutme__blurbs__blurb").forEach(blurb => {
   "-=1");
 });
 
-gsap.from(".footer", {  
-  scrollTrigger: ".footer", // start the animation when ".box" enters the viewport (once)
-  start: "top 90%",
+gsap.from(".footer", {
+  scrollTrigger: {
+    trigger: ".footer",
+    start: "top 90%",
+  },
   opacity: 0
 });
 
