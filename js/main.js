@@ -21,7 +21,7 @@ gsap.utils.toArray(".projects__project").forEach(project => {
     scrollTrigger: {
       trigger: project,
       toggleActions: "play none none none",
-      start: "top 95%",
+      start: "top 75%",
     }
   });
 
@@ -34,7 +34,7 @@ gsap.utils.toArray(".aboutme__blurbs__blurb").forEach(blurb => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: blurb,
-      start: "top 85%",
+      start: "top 80%",
       toggleActions: "play none none none",
     }
   });
@@ -44,7 +44,7 @@ gsap.utils.toArray(".aboutme__blurbs__blurb").forEach(blurb => {
     autoAlpha: 0,
     y: 30,
     ease: "back.out(1.7)",
-    duration: 1,
+    duration: .8,
   },
   "-=1");
 });
@@ -52,7 +52,7 @@ gsap.utils.toArray(".aboutme__blurbs__blurb").forEach(blurb => {
 gsap.from(".footer", {
   scrollTrigger: {
     trigger: ".footer",
-    start: "top 90%",
+    start: "top 80%",
   },
   opacity: 0
 });
