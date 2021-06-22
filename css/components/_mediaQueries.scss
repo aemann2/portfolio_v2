@@ -41,8 +41,10 @@
         }
 
         &__mobile {
-          width: 100%;
-          height: 100%;
+          width: 25%;
+          max-width: 570px;
+          height: auto;
+          top: 30%;
         }
       }
       
