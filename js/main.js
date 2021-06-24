@@ -30,6 +30,46 @@ gsap.utils.toArray(".projects__project").forEach(project => {
   });
 });
 
+gsap.utils.toArray(".projects__project__img").forEach((image, index) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: image,
+      toggleActions: "play none none none",
+      start: "top 90%",
+    }
+  });
+  // checking for even or odd 
+  if (index % 2 === 0) {
+    tl.from(image, {
+      x: '20px'
+    });
+  } else {
+    tl.from(image, {
+      x: '-20px'
+    });
+  }
+});
+
+gsap.utils.toArray(".projects__project__text").forEach((text, index) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: text,
+      toggleActions: "play none none none",
+      start: "top 90%",
+    }
+  });
+  // checking for even or odd 
+  if (index % 2 === 0) {
+    tl.from(text, {
+      x: '-20px'
+    });
+  } else {
+    tl.from(text, {
+      x: '20px'
+    });
+  }
+});
+
 gsap.utils.toArray(".aboutme__blurbs__blurb").forEach(blurb => {
   const tl = gsap.timeline({
     scrollTrigger: {

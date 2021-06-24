@@ -326,16 +326,12 @@
   color: #25272d;
   font-weight: 500;
   margin-bottom: 2rem;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .aboutme__blurbs__blurb:hover {
-  background-color: #a8aebf;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background-color: #d4d8e2;
 }
 
 .swiper-slide {
