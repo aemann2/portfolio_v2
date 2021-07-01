@@ -196,6 +196,13 @@
 
 .projects__project__buttons {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects__project__btnLink {
@@ -226,7 +233,7 @@
   font-size: 1.4rem;
   border: none;
   color: #162759;
-  background-color: #f2f1eb;
+  margin-top: 1.5rem;
 }
 
 .projects__project__liveBtn:hover {
@@ -456,6 +463,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    display: block;
   }
 }
 

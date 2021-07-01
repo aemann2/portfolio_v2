@@ -77,6 +77,8 @@
 
     &__buttons {
       text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
     &__btnLink {
@@ -107,7 +109,7 @@
       font-size: 1.4rem;
       border: none;
       color: $primary-color;
-      background-color: $light-color;
+      margin-top: 1.5rem;
 
       &:hover {
         color: $secondary-color;
