@@ -35,8 +35,9 @@
         flex: 1;
         align-self: center;
 
-        &__desktop {
+        &__desktop img {
           width: 100%;
+          max-width: 1024px;
           height: auto;
         }
 

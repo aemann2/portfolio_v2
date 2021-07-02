@@ -144,8 +144,9 @@
   position: relative;
 }
 
-.projects__project__img__desktop {
-  width: 85vw;
+.projects__project__img__desktop img {
+  width: 90%;
+  max-width: 450px;
   --aspect-ratio-w: 512;
   --aspect-ratio-h: 245;
   margin: auto;
@@ -449,8 +450,9 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .projects__project__img__desktop {
+  .projects__project__img__desktop img {
     width: 100%;
+    max-width: 1024px;
     height: auto;
   }
   .projects__project__img__mobile {
