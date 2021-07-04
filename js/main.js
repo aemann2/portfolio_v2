@@ -6,8 +6,8 @@ const navbar = document.querySelector('.navbar');
 const tl = gsap.timeline();
 
 if (window.scrollY < window.innerHeight - 50) {
-  tl.from(".welcome__img", {opacity: 0, duration: .7}, 0)
-  .from(".welcome__text", {x:'-100vw', duration: 1, ease:'power1'}, .5)
+  tl.from(".welcome__img", {opacity: 0, duration: .7, delay: .3})
+  .from(".welcome__text", {x:'-100vw', duration: 1, ease:'power1'})
   .fromTo(".navbar__links", {opacity: 0, visibility: 'hidden'}, {opacity: 1, duration: 1.5, visibility: 'visible'});
 }
 
@@ -144,6 +144,7 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 
 // swiper
 const swiper = new Swiper(".mySwiper", {
+  lazy: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

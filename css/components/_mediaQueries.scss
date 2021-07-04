@@ -35,8 +35,9 @@
         flex: 1;
         align-self: center;
 
-        &__desktop {
+        &__desktop img {
           width: 100%;
+          max-width: 1024px;
           height: auto;
         }
 
@@ -145,6 +146,10 @@
       }
   }
   
+  .swiper-container {
+    max-width: 1200px;
+  }
+  
   // contact sections and footer styles
     .contact {
       margin: 4rem 0 -4rem 0;
@@ -180,7 +185,7 @@
 
   .swiper-container {
     flex: 1.5;
-    align-self: center;
+    // align-self: center;
     border-radius: 12px;
   }
 }
