@@ -76,7 +76,7 @@
       <div class='projects__project__img'>
         <picture class='projects__project__img__desktop'>
           <source srcset='./images/projects/small/typing-blitz_small.png' media="(max-width: 800px)">
-          <img src="./images/projects/typing-blitz.png" alt="Background Blender" loading='lazy' />
+          <img src="./images/projects/typing-blitz.png" alt="Typing Blitz" loading='lazy' />
         </picture>
         <img class="projects__project__img__mobile" src="./images/projects/typing-blitz-mobile.jpg" alt="Typing Blitz"
           loading="lazy">
@@ -101,7 +101,7 @@
       <div class='projects__project__img'>
         <picture class='projects__project__img__desktop'>
           <source srcset='./images/projects/small/react-super-store_small.png' media="(max-width: 800px)">
-          <img src="./images/projects/react-super-store.png" alt="Background Blender" loading='lazy' />
+          <img src="./images/projects/react-super-store.png" alt="React Super Store" loading='lazy' />
         </picture>>
         <img class="projects__project__img__mobile" src="./images/projects/react-super-store-mobile.jpg"
           alt="React Super Store" loading="lazy">
@@ -150,7 +150,7 @@
       <div class='projects__project__img'>
         <picture class='projects__project__img__desktop'>
           <source srcset='./images/projects/small/name-diviner_small.png' media="(max-width: 800px)">
-          <img src="./images/projects/name-diviner.png" alt="Name-Diviner" loading='lazy' />
+          <img src="./images/projects/name-diviner.png" alt="Name Diviner" loading='lazy' />
         </picture>
         <img class="projects__project__img__mobile" src="./images/projects/name-diviner-mobile.jpg" alt="Name Diviner"
           loading="lazy">
@@ -187,16 +187,32 @@
       <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="swiper-slide__pic" src="./images/slider/img1.jpg" alt="Adam">
+            <picture>
+              <source class='swiper-slide__pic swiper-lazy' srcset='./images/slider/small/img1_small.jpg'
+                media="(max-width: 800px)">
+              <img class='swiper-slide__pic' src="./images/slider/img1.jpg" alt="Adam" />
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img class="swiper-slide__pic" src="./images/slider/img2.jpg" alt="Adam and Boney">
+            <picture>
+              <source class='swiper-slide__pic' srcset='./images/slider/small/img2_small.jpg'
+                media="(max-width: 800px)">
+              <img class='swiper-slide__pic' src="./images/slider/img2.jpg" alt="Adam" />
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img class="swiper-slide__pic" src="./images/slider/img3.jpg" alt="Cat">
+            <picture>
+              <source class='swiper-slide__pic' srcset='./images/slider/small/img3_small.jpg'
+                media="(max-width: 800px)">
+              <img class='swiper-slide__pic' src="./images/slider/img3.jpg" alt="Adam" />
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img class="swiper-slide__pic" src="./images/slider/img4.jpg" alt="Adam and Boney again">
+            <picture>
+              <source class='swiper-slide__pic' srcset='./images/slider/small/img4_small.jpg'
+                media="(max-width: 800px)">
+              <img class='swiper-slide__pic' src="./images/slider/img4.jpg" alt="Adam" />
+            </picture>
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -235,8 +251,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/smooth-scroll.polyfills.min.js"></script>
-  <script src="./js/swiper-bundle.min.js"></script>
   <script src='./js/main.js'></script>
 </body>
 

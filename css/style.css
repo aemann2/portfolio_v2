@@ -350,6 +350,18 @@
   border-radius: 3rem;
 }
 
+.swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 450px;
+}
+
 .footer {
   background-image: url("../../images/layout/footer.svg");
   height: calc(10rem + 10vw);
@@ -561,6 +573,9 @@
   .navbar__hamburger__icon {
     display: none;
   }
+  .swiper-container {
+    max-width: 1200px;
+  }
   .contact {
     margin: 4rem 0 -4rem 0;
   }
@@ -594,9 +609,6 @@
     -webkit-box-flex: 1.5;
         -ms-flex: 1.5;
             flex: 1.5;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     border-radius: 12px;
   }
 }
