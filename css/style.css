@@ -107,6 +107,23 @@
   /* All other browsers */
 }
 
+.calendar {
+  width: 80%;
+  margin: 0 auto 7rem auto !important;
+  min-width: 300px;
+  max-width: 1350px;
+  min-height: 0 !important;
+}
+
+.calendar__wrapper {
+  text-align: center;
+}
+
+.calendar__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .badge {
   font-size: 3rem;
   color: #162759;
