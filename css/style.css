@@ -77,6 +77,7 @@
 
 .welcome__img__portrait {
   width: 100vw;
+  min-width: 300px;
 }
 
 .skills {
@@ -105,6 +106,23 @@
   /* IE 7+ only support clip without commas */
   clip: rect(1px, 1px, 1px, 1px);
   /* All other browsers */
+}
+
+.calendar {
+  width: 80%;
+  margin: 0 auto 7rem auto !important;
+  min-width: 300px;
+  max-width: 1350px;
+  min-height: 0 !important;
+}
+
+.calendar__wrapper {
+  text-align: center;
+}
+
+.calendar__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .badge {
@@ -698,6 +716,7 @@ html {
 
 body {
   min-height: 100vh;
+  min-width: 300px;
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
   background-color: #f2f1eb;

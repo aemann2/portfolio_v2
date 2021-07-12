@@ -11,9 +11,12 @@ if (window.scrollY < window.innerHeight - 50) {
   .fromTo(".navbar__links", {opacity: 0, visibility: 'hidden'}, {opacity: 1, duration: 1.5, visibility: 'visible'});
 }
 
-gsap.from(".skills", {  
-  scrollTrigger: ".skills", // start the animation when ".box" enters the viewport (once)
-  opacity: 0
+gsap.from(".skills__wrapper", {  
+  scrollTrigger: {
+    trigger: '.skills__wrapper',
+    start: "top 75%",
+  },
+  opacity: 0,
 });
 
 gsap.utils.toArray(".projects__project").forEach(project => {
@@ -150,3 +153,7 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Github calendar
+
+GitHubCalendar(".calendar", "aemann2", { responsive: true });

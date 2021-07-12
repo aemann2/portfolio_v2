@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="manifest" href="favicon_io/site.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Adam Mann's Portfolio</title>
@@ -46,7 +47,10 @@
 
   <section class="welcome" id="welcome">
     <div class="welcome__img">
-      <img class="welcome__img__portrait" src="./images/layout/hero.jpeg" alt="A picture of Adam Mann">
+      <picture class='welcome__img__portrait'>
+        <source srcset='./images/layout/small/hero_small.jpeg' media="(max-width: 800px)">
+        <img class='welcome__img__portrait' src="./images/layout/hero.jpeg" alt="Typing Blitz" loading='lazy' />
+      </picture>
     </div>
     <div class="welcome__text">
       <h1 class="welcome__text__h1">Hello, I'm Adam.</h1>
@@ -54,19 +58,25 @@
     </div>
   </section>
 
-  <section class='skills' id='skills'>
-    <h2 class='skills__heading'>Skills</h2>
-    <i class="fab fa-html5 badge"></i>
-    <i class="fab fa-css3 badge"></i>
-    <i class="fab fa-js badge"></i>
-    <i class="fab fa-sass badge"></i>
-    <i class="fab fa-react badge"></i>
-    <i class="fab fa-bootstrap badge"></i>
-    <i class='fab fa-github badge'></i>
-    <i class="fab fa-figma badge"></i>
-    <i class="fab fa-python badge"></i>
-    <i class="fab fa-node badge"></i>
-    <i class="fab fa-npm badge"></i>
+  <section class='skills__wrapper' id='skills'>
+    <div class='skills'>
+      <h2 class='skills__heading'>Skills</h2>
+      <i class="fab fa-html5 badge"></i>
+      <i class="fab fa-css3 badge"></i>
+      <i class="fab fa-js badge"></i>
+      <i class="fab fa-sass badge"></i>
+      <i class="fab fa-react badge"></i>
+      <i class="fab fa-bootstrap badge"></i>
+      <i class='fab fa-github badge'></i>
+      <i class="fab fa-figma badge"></i>
+      <i class="fab fa-python badge"></i>
+      <i class="fab fa-node badge"></i>
+      <i class="fab fa-npm badge"></i>
+    </div>
+    <div class='calendar__wrapper'>
+      <h3 class='calendar__heading'>Github Calendar</h3>
+      <div class="calendar">Loading...</div>
+    </div>
   </section>
 
   <section class='projects' id="projects">
@@ -102,7 +112,7 @@
         <picture class='projects__project__img__desktop'>
           <source srcset='./images/projects/small/react-super-store_small.png' media="(max-width: 800px)">
           <img src="./images/projects/react-super-store.png" alt="React Super Store" loading='lazy' />
-        </picture>>
+        </picture>
         <img class="projects__project__img__mobile" src="./images/projects/react-super-store-mobile.jpg"
           alt="React Super Store" loading="lazy">
       </div>
@@ -253,6 +263,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <script src='./js/main.js'></script>
 </body>
 
