@@ -47,7 +47,10 @@
 
   <section class="welcome" id="welcome">
     <div class="welcome__img">
-      <img class="welcome__img__portrait" src="./images/layout/hero.jpeg" alt="A picture of Adam Mann">
+      <picture class='welcome__img__portrait'>
+        <source srcset='./images/layout/hero_small.jpeg' media="(max-width: 800px)">
+        <img class='welcome__img__portrait' src="./images/layout/hero.jpeg" alt="Typing Blitz" loading='lazy' />
+      </picture>
     </div>
     <div class="welcome__text">
       <h1 class="welcome__text__h1">Hello, I'm Adam.</h1>
