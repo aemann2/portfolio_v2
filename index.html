@@ -245,6 +245,69 @@
 				<div class="projects__project__img">
 					<picture class="projects__project__img__desktop">
 						<source
+							srcset="./images/projects/small/fullstack-small.png"
+							media="(max-width: 800px)"
+						/>
+						<img
+							src="./images/projects/fullstack.png"
+							alt="Fullstack Demos"
+							loading="lazy"
+						/>
+					</picture>
+					<img
+						class="projects__project__img__mobile"
+						src="./images/projects/fullstack-mobile.png"
+						alt="Fullstack Demos"
+						loading="lazy"
+					/>
+				</div>
+				<div class="projects__project__text">
+					<h3 class="projects__project__title">
+						Fullstack Demos (work in progress)
+					</h3>
+					<p class="projects__project__description">
+						A collection of three mini fullstack applications. Each application
+						stores/retrieves data from a MongoDB database, with the backend
+						hosted on Heroku. Menu Manager (coming soon!) and Contact List use
+						full CRUD functionality, while URL Shortener creates and reads.
+						Created using TDD, testing with React Testing Library / Jest.
+					</p>
+					<p class="projects__project__tech">
+						<strong class="projects__project--strong">Technologies</strong>:
+						React, Typescript, Styled Components, Node/Express, MongoDB, React
+						Testing Library, Jest, Mock Service Worker
+					</p>
+					<div class="projects__project__buttons">
+						<a
+							class="
+								projects__project__btnLink
+								projects__project__ghBtn
+								projects__project--btn
+							"
+							href="https://github.com/aemann2/fullstack-demos"
+							rel="noopener"
+							target="_blank"
+							>Github Repo</a
+						>
+						<a
+							class="
+								projects__project__btnLink
+								projects__project__liveBtn
+								projects__project--btn
+							"
+							href="https://fullstack-demos.netlify.app/"
+							rel="noopener"
+							target="_blank"
+							>Live site</a
+						>
+					</div>
+				</div>
+			</figure>
+
+			<figure class="projects__project">
+				<div class="projects__project__img">
+					<picture class="projects__project__img__desktop">
+						<source
 							srcset="./images/projects/small/typing-blitz_small.png"
 							media="(max-width: 800px)"
 						/>
