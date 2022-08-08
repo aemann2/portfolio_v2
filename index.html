@@ -196,42 +196,44 @@
 				<div class="projects__project__img">
 					<picture class="projects__project__img__desktop">
 						<source
-							srcset="./images/projects/small/open-oakland-small.png"
+							srcset="./images/projects/contact_keeper.png"
 							media="(max-width: 800px)"
 						/>
 						<img
-							src="./images/projects/open-oakland.png"
-							alt="Open Oakland"
+							src="./images/projects/contact_keeper.png"
+							alt="Contact Keeper"
 							loading="lazy"
 						/>
 					</picture>
+					<img
+						class="projects__project__img__mobile"
+						src="./images/projects/contact_keeper_mobile.png"
+						alt="Contact Keeper"
+						loading="lazy"
+					/>
 				</div>
 				<div class="projects__project__text">
 					<h3 class="projects__project__title">
-						Open Oakland: Funding Public Safety (Open Source)
+						Contact Keeper
 					</h3>
 					<p class="projects__project__description">
-						Funding Public Safety explores how Oakland spends Measure Z's
-						approximately $24 million annual budget, so Oaklanders can better
-						understand the City's approach to public safety and violence
-						prevention. I work with a team of volunteers implementing features
-						for the website.
+						Contact Keeper is an application built with Django. This is a full stack application that allows a user to register and create contacts with phone and email info, as well as filter those contacts. This project is a Django adaptation of <a href="https://www.traversymedia.com/">Brad Traversy's</a> React Contact Keeper, taken from his <a href="https://www.udemy.com/course/modern-react-front-to-back/">React Front to Back</a> Udemy course. Demo login credentials: testUser / 123test123
 					</p>
 					<p class="projects__project__tech">
 						<strong class="projects__project--strong">Technologies</strong>:
-						Eleventy, Nunjucks, Bootstrap, CSS, Github Pages
+						Python, Django, SASS, Bootstrap, HTMX, Coverage (for testing), Postgres, Heroku
 					</p>
 					<div class="projects__project__buttons">
 						<a
 							class="projects__project__btnLink projects__project__ghBtn projects__project--btn"
-							href="https://github.com/openoakland/funding-public-safety"
+							href="https://github.com/aemann2/contact_keeper"
 							rel="noopener"
 							target="_blank"
 							>Github Repo</a
 						>
 						<a
 							class="projects__project__btnLink projects__project__liveBtn projects__project--btn"
-							href="https://openoakland.github.io/funding-public-safety/"
+							href="https://django-contact-keeper.herokuapp.com/"
 							rel="noopener"
 							target="_blank"
 							>Live site</a
